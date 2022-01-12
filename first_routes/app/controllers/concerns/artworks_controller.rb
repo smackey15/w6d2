@@ -5,7 +5,7 @@ class ArtworksController < ApplicationController
         @user = User.find(params[:user_id])
         @artwork_shares = @user.artwork_shares
         render json: @artworks
-        # render json: @artwork_shares    
+        # render json: @artwork_shares     
     end
 
     def create
